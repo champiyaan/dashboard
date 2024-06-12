@@ -91,7 +91,7 @@
 }
 
 .project-card {
-  background-color: white;
+  background-color: rgb(147, 153, 88);
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #d1d5db;
@@ -100,17 +100,14 @@
 
 .announcements {
   grid-area: announcements;
-  background-color: #f1ecef;
-  padding: 5px;
+  background-color: white;
 }
 
 .announcement-card {
   background-color: rgb(149, 194, 175);
   border-radius: 5px;
-
   padding: 10px;
 }
-
 .trending {
   grid-area: trending;
   background-color: #ecf0f1;
@@ -125,7 +122,71 @@
 }
 
 hr {
-  border: none;
-  border-top: 1px solid #020202;
-  margin: 3px 0;
+  /* Increase margin for visibility */
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "announcements announcements"
+      "trending trending";
+  }
+
+  .header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-buttons {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "announcements"
+      "trending";
+  }
+
+  .header,
+  .sidebar,
+  .main-content,
+  .announcements,
+  .trending {
+    padding: 10px;
+  }
+
+  .header-buttons button {
+    margin: 5px 0;
+    padding: 8px 15px;
+  }
+
+  .group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-buttons button {
+    padding: 5px 10px;
+  }
+
+  .user-info img {
+    width: 30px;
+    height: 30px;
+  }
 }
