@@ -1,11 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container {
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
-  grid-template-rows: auto 1fr;
+  grid-template-columns: 0.7fr 1.8fr 0.9fr;
+  grid-template-rows: 1fr 1.2fr 0.9fr;
   grid-template-areas:
     "sidebar header header"
     "sidebar main announcements"
-    "sidebar main trending";
+    "sidebar . trending";
   height: 100vh;
   gap: 10px;
 }
@@ -34,7 +39,7 @@
 
 .header {
   grid-area: header;
-  background-color: white;
+  background-color: pink;
   color: #000000;
   padding: 20px;
   display: flex;
@@ -95,15 +100,14 @@
 
 .announcements {
   grid-area: announcements;
-  background-color: #ecf0f1;
-  padding: 20px;
+  background-color: #f1ecef;
+  padding: 5px;
 }
 
 .announcement-card {
-  background-color: white;
+  background-color: rgb(149, 194, 175);
   border-radius: 5px;
-  border: 1px solid #d1d5db;
-  margin-bottom: 10px;
+
   padding: 10px;
 }
 
@@ -114,8 +118,14 @@
 }
 
 .trending-card {
-  background-color: white;
+  background-color: rgb(165, 75, 145);
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #6281af;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #020202;
+  margin: 3px 0;
 }
