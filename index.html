@@ -5,39 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <div class="sidebar">
         <div class="branding">
-          <h1>Dashboard</h1>
+          <h1>
+            <img
+              src="icons/monitor-dashboard.svg"
+              alt="Dashboard icon"
+              class="dashy"
+            />Dashboard
+          </h1>
         </div>
         <nav class="navigation">
           <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+            <li><i class="material-icons">home</i> Home</li>
+            <li><i class="material-icons">person</i> Profile</li>
+            <li><i class="material-icons">message</i> Messages</li>
+            <li><i class="material-icons">history</i> History</li>
+            <li><i class="material-icons">assignment</i> Tasks</li>
+            <li><i class="material-icons">group</i> Communities</li>
+            <li><i class="material-icons">settings</i> Settings</li>
+            <li><i class="material-icons">support</i> Support</li>
+            <li><i class="material-icons">privacy_tip</i> Privacy</li>
           </ul>
         </nav>
       </div>
       <div class="header">
-        <div class="search-bar">
-          <input type="text" placeholder="Search..." />
+        <div class="combined">
+          <div class="group1">
+            <i class="material-icons">search</i>
+
+            <div class="search-bar">
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
+          <div class="group2">
+            <div class="profile">
+              <img src="icons/bell-ring-outline.svg" alt="bell" class="bell" />
+              <img src="images/avatar.jpg" alt="User Avatar 2" /><span
+                >Champiyaan</span
+              >
+            </div>
+          </div>
         </div>
         <div class="user-info">
           <img src="images/avatar.jpg" alt="User Avatar" />
-          <span>Champiyaan</span>
+          <span>Champiyaan (@champ)</span>
         </div>
+
         <div class="header-buttons">
           <button>New</button>
           <button>Upload</button>
@@ -83,6 +105,7 @@
           </div>
         </div>
       </div>
+
       <div class="announcements">
         <h2>Announcements</h2>
         <div class="announcement-card">

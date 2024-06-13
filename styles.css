@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 .container {
   display: grid;
@@ -12,7 +15,8 @@
     "sidebar main announcements"
     "sidebar . trending";
   height: 100vh;
-  gap: 10px;
+  gap: 5px;
+  margin: 0px 5px;
 }
 
 .sidebar {
@@ -24,7 +28,6 @@
 
 .branding h1 {
   font-size: 1.5rem;
-  margin: 0 0 20px 0;
 }
 
 .navigation ul {
@@ -42,9 +45,6 @@
   background-color: pink;
   color: #000000;
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .search-bar input {
@@ -55,8 +55,8 @@
 }
 
 .user-info {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 }
 
 .user-info img {
@@ -67,7 +67,6 @@
 }
 
 .header-buttons button {
-  margin-left: 10px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -101,10 +100,13 @@
 .announcements {
   grid-area: announcements;
   background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-top: 20px;
 }
 
 .announcement-card {
-  background-color: rgb(149, 194, 175);
+  background-color: white;
   border-radius: 5px;
   padding: 10px;
 }
@@ -128,65 +130,71 @@ hr {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-  .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-      "header header"
-      "sidebar main"
-      "announcements announcements"
-      "trending trending";
-  }
 
-  .header {
-    padding: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header-buttons {
-    margin-top: 10px;
-  }
+.navigation li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas:
-      "header"
-      "sidebar"
-      "main"
-      "announcements"
-      "trending";
-  }
-
-  .header,
-  .sidebar,
-  .main-content,
-  .announcements,
-  .trending {
-    padding: 10px;
-  }
-
-  .header-buttons button {
-    margin: 5px 0;
-    padding: 8px 15px;
-  }
-
-  .group {
-    flex-direction: column;
-  }
+.navigation li i.material-icons {
+  margin-right: 10px; /* Adjust this value as needed */
+  font-size: 24px; /* Adjust the icon size if necessary */
 }
 
-@media (max-width: 480px) {
-  .header-buttons button {
-    padding: 5px 10px;
-  }
+.dashy {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  vertical-align: middle; /* Align with the text */
+  margin-right: 10px; /* Space between icon and text */
+}
 
-  .user-info img {
-    width: 30px;
-    height: 30px;
-  }
+.branding {
+  margin-bottom: 20px;
+}
+
+.navigation li:nth-child(6) {
+  /* Apply styles to the 5th list item within the navigation */
+  /* Note: nth-child index is 1-based */
+  /* You can adjust the styles as needed */
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+.bell {
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+}
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.group1 {
+  display: flex;
+  align-items: center;
+}
+
+.group2 {
+  display: flex;
+  align-items: center;
+}
+.combined {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.combined2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group3 {
+  display: flex;
+  align-items: center;
+}
+.group4 {
+  display: flex;
+  flex-direction: end;
 }
