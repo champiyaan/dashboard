@@ -55,8 +55,7 @@
 }
 
 .user-info {
-  /* display: flex;
-  align-items: center; */
+  display: flex;
 }
 
 .user-info img {
@@ -72,6 +71,7 @@
   border-radius: 5px;
   background-color: #2980b9;
   color: #ecf0f1;
+  margin-right: 10px;
 }
 
 .main-content {
@@ -172,29 +172,30 @@ hr {
 
 .group1 {
   display: flex;
-  align-items: center;
 }
 
-.group2 {
-  display: flex;
-  align-items: center;
-}
 .combined {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .combined2 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .group3 {
+}
+.group4 {
+}
+.profile {
   display: flex;
   align-items: center;
 }
-.group4 {
+
+.header-buttons {
   display: flex;
-  flex-direction: end;
+  align-items: center;
+}
+.champ {
+  flex-direction: column;
 }
