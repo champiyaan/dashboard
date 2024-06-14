@@ -16,7 +16,7 @@
     "sidebar main trending";
   height: 100vh;
   gap: 5px;
-  margin: 0px 1px;
+  margin: 0px 0px;
 }
 
 .sidebar {
@@ -129,16 +129,9 @@
 }
 .trending {
   grid-area: trending;
-  background-color: #ecf0f1;
+  background-color: white;
   padding: 10px;
 }
-/* 
-.trending-card {
-  background-color: rgb(165, 75, 145);
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #6281af;
-} */
 
 hr {
   /* Increase margin for visibility */
@@ -171,10 +164,7 @@ hr {
 }
 
 .navigation li:nth-child(6) {
-  /* Apply styles to the 5th list item within the navigation */
-  /* Note: nth-child index is 1-based */
-  /* You can adjust the styles as needed */
-  margin-bottom: 20px; /* Add margin at the bottom */
+  margin-bottom: 20px;
 }
 
 .profile img {
@@ -199,10 +189,6 @@ hr {
   margin-bottom: 20px;
 }
 
-.group3 {
-}
-.group4 {
-}
 .profile {
   display: flex;
   align-items: center;
@@ -250,4 +236,21 @@ hr {
 .trending-card img {
   width: 60px;
   height: 60px;
+}
+
+.smallicons {
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+}
+
+.trending-card {
+  display: flex;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+.trending-card img {
+  margin-bottom: 5px;
 }
