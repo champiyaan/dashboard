@@ -9,14 +9,14 @@
 .container {
   display: grid;
   grid-template-columns: 0.7fr 1.8fr 0.9fr;
-  grid-template-rows: 1fr 1.2fr 0.9fr;
+  grid-template-rows: 1fr 1.9fr 0.9fr;
   grid-template-areas:
     "sidebar header header"
     "sidebar main announcements"
-    "sidebar . trending";
+    "sidebar main trending";
   height: 100vh;
   gap: 5px;
-  margin: 0px 5px;
+  margin: 0px 1px;
 }
 
 .sidebar {
@@ -42,9 +42,10 @@
 
 .header {
   grid-area: header;
-  background-color: pink;
+  background-color: white;
   color: #000000;
   padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .search-bar input {
@@ -52,6 +53,7 @@
   border: none;
   border-radius: 5px;
   background-color: #e2e8f0;
+  width: 200%;
 }
 
 .user-info {
@@ -76,7 +78,7 @@
 
 .main-content {
   grid-area: main;
-  background-color: #ecf0f1;
+  background-color: white;
   padding: 10px;
 }
 
@@ -90,38 +92,53 @@
 }
 
 .project-card {
-  background-color: rgb(147, 153, 88);
-  padding: 10px;
+  background-color: white;
+  padding: 20px;
   border-radius: 5px;
-  border: 1px solid #d1d5db;
+  border-left: 10px solid orange; /* Add a thick orange line on the left */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   flex: 1;
+}
+
+.sharepoints svg {
+  width: 24px; /* Adjust the size of the icons */
+  height: 24px;
+}
+
+.sharepoints {
+  bottom: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  display: flex;
+  gap: 15px; /* Space between the SVG icons */
+  flex-direction: row-reverse;
 }
 
 .announcements {
   grid-area: announcements;
   background-color: white;
-  border: 1px solid black;
+
   border-radius: 3px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .announcement-card {
   background-color: white;
   border-radius: 5px;
   padding: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 .trending {
   grid-area: trending;
   background-color: #ecf0f1;
   padding: 10px;
 }
-
+/* 
 .trending-card {
   background-color: rgb(165, 75, 145);
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #6281af;
-}
+} */
 
 hr {
   /* Increase margin for visibility */
@@ -159,10 +176,7 @@ hr {
   /* You can adjust the styles as needed */
   margin-bottom: 20px; /* Add margin at the bottom */
 }
-.bell {
-  width: 24px; /* Adjust size as needed */
-  height: 24px;
-}
+
 .profile img {
   width: 40px;
   height: 40px;
@@ -172,6 +186,7 @@ hr {
 
 .group1 {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .combined {
@@ -181,6 +196,7 @@ hr {
 .combined2 {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .group3 {
@@ -191,11 +207,47 @@ hr {
   display: flex;
   align-items: center;
 }
+.profile .champname {
+  margin-right: 20px;
+}
 
 .header-buttons {
   display: flex;
   align-items: center;
 }
-.champ {
+.down {
+  display: flex;
   flex-direction: column;
+}
+
+.hi-username {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.hi-there {
+  font-weight: bold;
+}
+
+.profile .champname {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.profile .svg {
+  height: 24px;
+  width: 24px;
+}
+.group1 .material-icons {
+  margin-right: 20px; /* Space between the icon and the search bar */
+}
+
+.group2 .profile svg {
+  width: 24px; /* Set the width */
+  height: 24px; /* Set the height */
+  margin-right: 20px;
+}
+
+.trending-card img {
+  width: 60px;
+  height: 60px;
 }
