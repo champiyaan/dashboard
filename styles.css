@@ -45,7 +45,7 @@
   background-color: white;
   color: #000000;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
 .search-bar input {
