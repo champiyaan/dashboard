@@ -96,7 +96,8 @@
   padding: 20px;
   border-radius: 5px;
   border-left: 10px solid orange; /* Add a thick orange line on the left */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+
   flex: 1;
 }
 
@@ -125,7 +126,7 @@
   background-color: white;
   border-radius: 5px;
   padding: 10px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 .trending {
   grid-area: trending;
@@ -248,7 +249,7 @@ hr {
   display: flex;
   background-color: white;
   padding: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow */
   border-radius: 3px;
 }
 .trending-card img {
